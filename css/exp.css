@@ -1,0 +1,194 @@
+* {box-sizing: border-box;
+margin: 0;}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+/* .wrap {
+  display: inline-block;
+  margin: 0 40px 2em 0;
+  margin: 0;
+  background: rgba(228, 225, 228, .5);
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+div {
+  width: 170px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.eleven{
+  width: 100%;
+  height: 100%;
+  -o-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -ms-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -moz-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -webkit-transform: matrix(1.2,0,0.5,1.2,50,0);
+  transform: matrix(1.2,0,-0.5,1.2,-61,0);
+  background: url(../img/bag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+}
+.twelve{
+  width: 100%;
+  height: 100%;
+  -o-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -ms-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -moz-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -webkit-transform: matrix(1.2,0,0.5,1.2,50,0);
+  transform: matrix(1.2,0,-0.5,1.2,61,0);
+  background: url(../img/bag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+} */
+/* .wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  z-index: 99;
+  overflow: hidden;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 999;
+}
+.f{
+  position: relative;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  float: left;
+  z-index: 2;
+}
+.one, .two{
+  width: 100%;
+  float: left;
+  height: 100%;
+  background-image: url(../img/bag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  overflow: hidden;
+  -o-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -ms-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -moz-transform: matrix(1.2,0,0.5,1.2,50,0);
+  -webkit-transform: matrix(1.2,0,0.5,1.2,50,0);
+  transform: matrix(1.2,0,-0.5,1.2,-65,0);
+}
+.f .obrec-bl{
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  right: -81%;
+  transform: rotate(106deg);
+  z-index: 9;
+}
+.two{
+  background-position: right center;
+  transform: matrix(1.2,0,-0.5,1.2,65,0);
+}
+.s{
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+ */
+/*  .wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  z-index: 99;
+  overflow: hidden;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 999;
+}
+.f{
+  position: relative;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  float: left;
+  z-index: 2;
+}
+.one{
+ width: 100%;
+ height: 100%;
+ background-image: url(../img/bag.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+} */
+
+
+#container{
+  overflow:hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slanted{
+  width: 50%;
+  height: 100%;
+  transform-origin: 0 0%;
+  transform: skewX(-15deg);
+  overflow: hidden;
+  float: left;
+  transform: translate3d(0, 100%, 0);
+  transition: all 2s ease-in-out;
+}
+.slanted img{
+  width:100%;
+  height: 100%;
+  display:block;
+  transform-origin:inherit;
+  transform:skewX(15deg);
+}
+.slantedt{
+  width: 50%;
+  height: 100%;
+  transform-origin: 0 0%;
+  transform: skewX(-15deg);
+  overflow: hidden;
+  transform: translate3d(0, -100%, 0);
+  transition: all 2s ease-in-out;
+
+}
+.slantedt img{
+  width:100%;
+  height: 100%;
+  display:block;
+  transform-origin:inherit;
+  transform:skewX(15deg);
+}
+.link-bl{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+}

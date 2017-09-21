@@ -1,0 +1,51 @@
+@media (max-width: 1000px){
+	.overlay ul li:last-child .text-hidden {
+	    left: -95%;
+	}
+	#section-third h1.title{
+		display: none;
+	}
+	#section-third .tabs-contacts::before{
+		display: none;
+	}
+	.tab-link.active{
+		background-color: #000;
+	}
+	.tab-link{
+		background-color: #f3f0ef;
+	}
+	.tabs-contacts .tab-link.active h1 a{
+		color: #fff;
+	}
+	.tabs-contacts .tab-link h1 a{
+		color: #000;
+	}
+	.tabs-contacts{
+		height: 9.55%;
+	}
+	.infa-block{
+		width: 100%;
+		bottom: 0;
+	    top: auto;
+	    left: 0;
+	}
+	.tabs-content{
+		height: 78%;
+	}
+	.overlay{
+		height: 42%;
+	}
+	.footer{
+		height: 13%;
+	}
+	.logo-footer{
+		margin-top: 3px;
+	}
+	.footer ul.info-ul{
+		line-height: 19px;
+		justify-content: flex-start;
+	}
+}
+@media (max-width: 700px) {
+
+}

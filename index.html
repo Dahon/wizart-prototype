@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#page-preloader {
+		    position: fixed;
+		    left: 0;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    background: #262626;
+		    z-index: 100500;
+		}
+
+		#page-preloader .spinner {
+		    width: 165px;
+		    height: 105px;
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		    top: 45%;
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		}
+			.pulse{
+			width: 165px;
+			height: 105px;
+		    animation-name: pulse;
+		    -webkit-animation-name: pulse;  
+		 
+		    animation-duration: 3s;   
+		    -webkit-animation-duration: 3s;
+
+		    animation-iteration-count: infinite;
+		    -webkit-animation-iteration-count: infinite;
+		    cursor: pointer;
+		}
+		 
+		@keyframes pulse {
+		    0% {
+		        transform: scale(0.9);
+		        opacity: 0.7;       
+		    }
+		    50% {
+		        transform: scale(1);
+		        opacity: 1; 
+		    }   
+		    100% {
+		        transform: scale(0.9);
+		        opacity: 0.7;   
+		    }           
+		}
+
+		@-moz-keyframes showBlockTop {
+		  0% {
+		      transform: scale(0.9);
+		      opacity: 0.7;       
+		  }
+		  50% {
+		      transform: scale(1);
+		      opacity: 1; 
+		  }   
+		  100% {
+		      transform: scale(0.9);
+		      opacity: 0.7;   
+		  } 
+		}
+		@-o-keyframes showBlockTop {
+		  0% {
+		      transform: scale(0.9);
+		      opacity: 0.7;       
+		  }
+		  50% {
+		      transform: scale(1);
+		      opacity: 1; 
+		  }   
+		  100% {
+		      transform: scale(0.9);
+		      opacity: 0.7;   
+		  } 
+		}
+		@-webkit-keyframes pulse {
+		    0% {
+		        -webkit-transform: scale(0.95);
+		        opacity: 0.7;       
+		    }
+		    50% {
+		        -webkit-transform: scale(1);
+		        opacity: 1; 
+		    }   
+		    100% {
+		        -webkit-transform: scale(0.95);
+		        opacity: 0.7;   
+		    }           
+		}
+	</style>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/onepage-scroll.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+</head>
+<body>
+	<div id="page-preloader"><span class="spinner"><img src="img/preload.png" alt="" class="pulse"></span></div>
+	<div class="logo-icon">
+		<a href=""><img src="img/logo-icon.png" alt=""></a>
+	</div>
+	<div class="burger-menu">
+		<img src="img/burger-menu.png" alt="" class="click-open">
+		<div class="menu-open">
+			<div class="lang-bl">
+				<ul>
+					<li><a href="">EN</a></li>
+					<li><a href="">RUS</a></li>
+					<li><a href="">FR</a></li>
+					<li><a href="" class="burger-close"><img src="img/burger-menu.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="link-list">
+				<ul>
+					<li class="active"><a href="">главная</a></li>
+					<li><a href="">о компании</a></li>
+					<li><a href="">услуги</a></li>
+					<li><a href="">работы</a></li>
+					<li><a href="">конаткты</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<section id="section-first">
+		    <div class="main-block">
+		        <div class="main-block-inner">
+		            <!-- <img src="<?= $bundle->baseUrl ?>/img/logo.png" alt="" class="logo"> -->
+		            <div class="result">
+		                <div class="inn">
+		                    <h1><a href="" class="logo-text pre-passive curs-point">
+		                            <i class="log-icon"></i>
+		                            <span class="wiz">Wiz<i>'</i></span>
+		                            <ul class="change-text">
+		                                <li><p>ARDING IS OUR SECRET p</p></li>
+		                                <li><p>ard lives in every he</p></li>
+		                                <li class="mob-hid"><p>ards are ready to st</p></li>
+		                            </ul>
+		                            <!-- <span class="mid-art"></span> -->
+		                            <span class="art">art</span></a>
+		                    </h1>
+		                </div>
+		            </div>
+		            <div class="scroll-down-but">
+		                <img src="<?= $bundle->baseUrl ?>/img/down-scroll.png" alt="">
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		<section id="section-second">
+			<div class="main-block">
+				<div class="main-block-inner">
+					<div class="fullscreen-bg">
+						<div class="block-1 show-bl active">
+							<div class="left-block-v change-bl">
+								<img src="img/tolkyn.png" alt="">
+							</div>
+							<div class="right-block-v change-bl">
+								<img src="img/tolkyn.png" alt="">
+							</div>
+							<video id="video-1" width="100%" loop muted poster="video/plane.jpg" class="fullscreen-bg__video" >
+							    <source src="video/tolkynd.mp4" type="video/mp4">
+							    <!-- <source src="video/tolkyn.ogv" type="video/ogg">
+							    <source src="video/tolkyn.webm" type="video/webm"> -->
+							</video>
+						</div>
+						<div class="block-2 show-bl ">
+							<div class="left-block-v change-bl">
+								<img src="img/casino.png" alt="">
+							</div>
+							<div class="right-block-v change-bl">
+								<img src="img/casino.png" alt="">
+							</div>
+							<video id="video-2" loop muted width="100%" class="fullscreen-bg__video">
+								<source src="video/casino.ogv" type='video/ogg; codecs="theora, vorbis"'>
+							    <source src="video/casino.mp4"  type="video/mp4">
+							    <!-- <source src="video/casino.webm" type="video/webm"> -->
+							</video>
+						</div>
+					    <div class="block-3 show-bl ">
+					    	<div class="left-block-v change-bl">
+					    		<img src="img/ShowReel.png" alt="">
+					    	</div>
+					    	<div class="right-block-v change-bl">
+					    		<img src="img/ShowReel.png" alt="">
+					    	</div>
+					    	<video id="video-3" width="100%" loop muted poster="video/plane.jpg" class="fullscreen-bg__video">
+								<source src="video/ShowReel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+					    	    <source src="video/ShowReel.mp4" type="video/mp4">
+					    	    <source src="video/ShowReel.webm" type="video/webm">
+					    	</video>
+					    </div>
+					    <div class="block-4 show-bl ">
+					    	<div class="left-block-v change-bl">
+					    		<img src="img/batyr.png" alt="">
+					    	</div>
+					    	<div class="right-block-v change-bl">
+					    		<img src="img/batyr.png" alt="">
+					    	</div>
+					    	<video id="video-4" loop muted poster="video/plane.jpg" class="fullscreen-bg__video">
+								<source src="video/batyr.ogv" type='video/ogg; codecs="theora, vorbis"'>
+					    	    <source src="video/batyr.mp4" type="video/mp4">
+					    	    <source src="video/batyr.webm" type="video/webm">
+					    	</video>
+					    </div>
+						<div class="block-5 show-bl ">
+							<div class="left-block-v change-bl">
+								<img src="img/Wedding-Rixos_1.png" alt="">
+							</div>
+							<div class="right-block-v change-bl">
+								<img src="img/Wedding-Rixos_1.png" alt="">
+							</div>
+							<video id="video-5" loop muted poster="video/plane.jpg" class="fullscreen-bg__video">
+								<source src="video/Wedding-Rixos_1.ogv" type='video/ogg; codecs="theora, vorbis"'>
+							    <source src="video/Wedding-Rixos_1.mp4" type="video/mp4">
+							    <source src="video/Wedding-Rixos_1.webm" type="video/webm">
+							</video>
+						</div>
+						<div class="block-6 show-bl ">
+							<div class="left-block-v change-bl">
+								<img src="img/IMG_3426.png" alt="">
+							</div>
+							<div class="right-block-v change-bl">
+								<img src="img/IMG_3426.png" alt="">
+							</div>
+							<video id="video-6" loop muted poster="video/plane.jpg" class="fullscreen-bg__video">
+								<source src="video/IMG_3426.ogv" type='video/ogg; codecs="theora, vorbis"'>
+							    <source src="video/IMG_3426.mp4" type="video/mp4">
+							    <source src="video/IMG_3426.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+					<div class="overlay">
+					    <ul>
+					    	<li data-id="link-1" class="active">
+					    		<a href="">Концерты</a>
+							 	<div class="text-hidden">
+		  			    			<p>Мы самая прикольная команда полного цикла которая создает офигенные концерты.</p>
+		  			    		</div>
+				    		</li>
+					    	<li data-id="link-2">
+					    		<a href="">3D МАППИНГ</a>
+							 	<div class="text-hidden">
+		  			    			<p>Мы самая прикольная команда полного цикла которая создает офигенные концерты.</p>
+		  			    		</div>
+				    		</li>
+					    	<li data-id="link-3">
+					    		<a href="">ИНСТАЛЯЦИИ</a>
+							 	<div class="text-hidden">
+		  			    			<p>Мы самая прикольная команда полного цикла которая создает офигенные концерты.</p>
+		  			    		</div>
+				    		</li>
+					    	<li data-id="link-4">
+					    		<a href="">ПЕРФОРМАНСЫ</a>
+								<div class="text-hidden">
+									<p>Мы самая прикольная команда полного цикла которая создает офигенные концерты.</p>
+								</div>
+				    		</li>
+					    	<li data-id="link-5">
+					    		<a href="">ИНТЕРАКТИВЫ</a>
+					    		<div class="text-hidden">
+					    			<p>Мы самая прикольная команда полного цикла которая создает офигенные концерты.</p>
+					    		</div>
+				    		</li>
+					    	<li data-id="link-6">
+					    		<a href="">МЕРОПРИЯТИЯ</a>
+					    		<div class="text-hidden">
+					    			<p>Мы самая прикольная команда полного цикла которая создает офигенные концерты.</p>
+					    		</div>
+				    		</li>
+					    </ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section-third">
+			<div class="main-block">
+				<div class="main-block-inner">
+					<h1 class="title">наши контакты</h1>
+					<div class="tabs-contacts">
+						<div  data-id="first-tab" class="tab-link active">
+							<h1><a href="">Казахстан</a></h1>
+						</div>
+						<div  data-id="second-tab" class="tab-link">
+							<h1><a href="">канада</a></h1>
+						</div>
+					</div>
+					<div class="tabs-content">
+						<div  id="first-tab" class="content-first content-inner active">
+							<div id="map_canvas" style="width:100%; height:100%">
+							</div>
+							<div class="separate-bl">
+								<div class="infa-block">
+									<p>г. Алматы, Бухар Жырау 26/1, бц "Evolution", оф. 54 +7 (727) 344 1317</p>
+									<a href="">написать письмо</a>
+								</div>
+							</div>
+						</div>
+						<div id="second-tab" class="content-second content-inner">
+							<div id="map_canvas_second" style="width:100%; height:100%"></div>
+						</div>
+					</div>
+					<div class="footer">
+						<div class="block-left-footer">
+							<div class="logo-footer">
+								<img src="img/logo.png" alt="">
+								<p>© 2016 Все права защищены</p>
+							</div>
+							<ul class="info-ul">
+								<li><p>Адрес: г. Алматы, Бухар Жырау 26/1, бц "Evolution", оф. 54 </p></li>
+								<li><p>Телефон: +7 (727) 344 1317</p></li>
+								<li><p>Email: info@wizart.kz</p></li>
+							</ul>
+						</div>
+						<div class="soc-block">
+							<ul class="social-bl">
+								<li><a href="" class="vk-icon"><img src="img/vk-icon.png" alt=""></a></li>
+								<li><a href="" class="tube-icon"><img src="img/tube-icon.png" alt=""></a></li>
+								<li><a href="" class="face-icon"><img src="img/face-icon.png" alt=""></a></li>
+								<li><a href="" class="vi-icon"><img src="img/vi-icon.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+	</div>
+
+</body>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/jquery.particleground.min.js"></script>
+<script src='js/jquery.onepage-scroll.min.js'></script>
+<script type="text/javascript">
+	initialize();
+	function initialize() {
+
+	var latlng = new google.maps.LatLng(43.231857, 76.920346);
+	var settings = {
+	zoom: 15,
+	center: latlng,
+	mapTypeControl: true,
+	mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+	navigationControl: true,
+	navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map_canvas"), 
+	settings);
+
+	var companyLogo = new google.maps.MarkerImage('img/map-icon.png',
+	new google.maps.Size(48,71),
+	new google.maps.Point(0,0),
+	new google.maps.Point(50,50)
+	);
+
+	var companyPos = new google.maps.LatLng(43.232414, 76.923144);
+	var companyMarker = new google.maps.Marker({
+	position: companyPos,
+	map: map,
+	icon: companyLogo,
+	title:"Company Title",
+	});
+
+
+	var latlng_sec = new google.maps.LatLng(57.0442, 9.9116);
+	var settings_sec = {
+	zoom: 15,
+	center: latlng_sec,
+	mapTypeControl: true,
+	mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+	navigationControl: true,
+	navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map_sec = new google.maps.Map(document.getElementById("map_canvas_second"), 
+	settings_sec);
+
+	var companyLogo_sec = new google.maps.MarkerImage('img/map-icon.png',
+	new google.maps.Size(48,71),
+	new google.maps.Point(0,0),
+	new google.maps.Point(50,50)
+	);
+
+	var companyPos_sec = new google.maps.LatLng(57.0442, 9.9116);
+	var companyMarker_sec = new google.maps.Marker({
+	position: companyPos_sec,
+	map: map_sec,
+	icon: companyLogo_sec,
+	title:"Company Title",
+	});
+
+	}
+</script>
+<script src="js/main.js"></script>
+</html>
